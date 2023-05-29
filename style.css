@@ -1,0 +1,993 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+@font-face {
+    font-family: Renner medium;
+    src: url(./fonts/Renner_\ 400\ Book.ttf);
+}
+@font-face {
+    font-family: Renner bold;
+    src: url(./fonts/Renner_\ 700\ Bold.ttf);
+}
+   .logo{
+
+  width: 150%;
+  margin-right: -30rem;
+}  
+ 
+
+
+body{
+    background-color: white;
+    color: black;
+}
+html{
+  overflow-x: hidden;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  margin-right: 133px;
+
+  
+}
+.nav-item {
+  margin: 0rem;
+}
+
+.nav-menu a{
+    color: black;
+    font-family: Renner medium;
+    font-size: 20px;
+    z-index: 100px;
+  }  
+
+  /* .header{
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    margin-right:500px;
+  
+  }  */
+
+
+  /* .nav-item {
+    margin-right: 2rem;
+  }  */
+
+  /* .nav-item {
+    margin-right: 5rem;
+  } 
+   *
+
+
+  
+
+  /* .nav-menu a:hover{
+    color: rgb(255, 113, 0);
+  } 
+
+  .nav-item {
+  margin-left: 5rem;
+} 
+
+
+
+/* .nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+} */
+
+.nav-link:hover{
+  color: rgb(255, 113, 0);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+}
+
+ 
+
+  
+  
+    .navbar{
+    height: 18vh;
+  }  
+  
+   .nav-logo{
+    margin-left: 100px;
+    width: 15%;
+  }   
+
+  
+  
+  .billboard{
+    padding-top: 10%;
+    
+  }
+  
+
+  .content p{
+    font-family: Renner bold;
+    font-size: 60px;
+    padding-top:7% ;
+  }
+
+  .content span{
+    color: rgb(255, 113, 0);
+  }
+
+  .vee{
+    padding-bottom: 100px;
+  }
+
+  .info{
+    padding-top: 5%;
+    margin-right: 70px;
+  }
+
+  .mobi{
+      margin-left: -177px;
+      width: 142%;
+      padding-bottom: 60px;
+
+  }
+
+
+  .aboutus{
+    background-color: black;
+    padding-top:10%;
+    position: relative;
+    margin: 50px 0 0 0;
+    padding: 0 0 100px 0;
+  }
+
+  .card{
+    width: 30rem;
+    background-color: rgb(255, 113, 9);
+    margin-top: -200px;
+   padding-top: 10%;
+    align-items: center;
+    height: 30rem;
+    padding: 50px;
+    position: absolute;
+    top: 71px; 
+   } 
+
+  .btn{
+    padding-top: 200px;
+  }
+  .card p{
+    font-family: Renner medium;
+  }
+
+.card h6{
+  font-family: Renner bold;
+}
+.cont{
+  text-align: left;
+  padding-top: 40px;
+
+  
+} 
+.cont p{
+  margin-top: 100px;
+
+}
+.cont h6{
+font-size: 25px;
+  
+}
+
+.right{
+  text-align: center;
+}
+.right img{
+  width: 80%;
+  object-fit: contain;
+}
+
+.aims{
+  color: #fff;
+  font-family: Renner medium;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  margin: 50px 0;
+}
+.aims li{
+  margin-left: 2rem;
+}
+.white-card{
+  background-color: #fff;
+  height:6rem ;
+  width: 15rem;
+}
+.white-card p{
+  text-align: center;
+  margin-top: 60px;
+  font-family: Renner bold;
+  font-size: 30px;
+}
+.pee{
+  font-family: Renner medium;
+  text-align: center;
+}
+.donate-card{
+  background-color: rgb(255, 113, 0);
+  height:6rem ;
+  width: 30rem;
+  margin-top: 60px;
+}
+.progress-bar {
+background-color: #fff;
+ width: 60%;
+ 
+}
+.donate-card p{
+  color: #fff;
+  font-family: Renner bold;
+  margin-left:3rem;
+  font-size: 20px;
+  
+}
+
+/* .donate-card .pt{
+
+margin-top: 80px;
+
+} */
+
+
+
+
+.donate-card   .target   {
+
+  font-family: Renner medium;
+  color: #fff;
+  margin-right:10rem;
+font-size: 13px;
+margin-top: -30px;
+}
+
+
+.donate-card h6{
+  font-family: Renner medium;
+  color: #fff;
+  margin-left:5rem;
+}
+.cardd{
+ padding: 100px 0 0 0 ;
+  background-color: black;
+}
+.donate-card a{
+  color: #fff;
+  font-family: Renner medium;
+  margin-left:25rem;
+}
+.pic{
+  display: grid;
+}
+.pic2{
+  display: flex;
+}
+.galarrey{
+  padding-top: 10%;
+  /* height: 130vh; */
+}
+.fistr{
+  display: flex;
+  justify-content: center;
+}
+.image1{
+  width: 25%;
+  padding-left: 10px;
+  height: 19rem;
+  object-fit: cover;
+}
+.secondr{
+  display: flex;
+  padding-top: 10px;
+}
+.image2{
+  padding-left: 10px;
+  width: 25%;
+  height: 20rem;
+  object-fit: cover;
+
+}
+
+
+.image3{
+  padding-left: 10px;
+  width: 50%;
+  height: 20rem;
+  object-fit: cover;
+
+}
+
+
+.image5{
+  padding-left: 10px;
+  width: 50%;
+  height: 20rem;
+}
+.image6{
+  padding-left: 10px;
+  width:40%;
+  height: 20rem;
+}
+.kcard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+  height:20rem;
+  background-color: black;
+  padding: 30px;
+}
+
+.kcard p{
+color:white;
+ margin-top: -3px;
+ text-align: center;
+ 
+}
+.facebk{
+width: 4%;
+padding-right:10px;
+}
+.facebkk{
+background-color: #fff;
+  width: 4%;
+padding-right:20px;
+}
+.kee {
+  padding: 2px 16px;
+}
+.kcard p{
+  font-family: Renner bold;
+  font-size: 22px;
+  text-align: left;
+}
+.kcard p span{
+  color: rgb(255, 113, 0);
+}
+.themobi{
+  margin:100px 0;
+}
+.content3 p{
+  font-family: Renner medium;
+}
+
+.content3 h6{
+  color: rgb(255, 113, 0);
+  font-family: Renner bold;
+  font-size: 25px;
+padding-bottom: 40px;
+}
+hr{
+  color: rgb(255, 113, 0);
+  width: 10%;
+   margin-left:10rem; 
+
+} 
+.hr{
+  margin-top: -18px;
+  border-radius: 10px;
+} 
+
+.color{
+  color: rgb(255, 113, 0);
+}
+
+.history{
+background-color: black;
+padding:100px 0 0 0 ; 
+padding-bottom: 50px;
+}
+  
+
+.lcard{
+  background-color: rgb(255, 113, 0);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 40px;
+}
+
+.lcard h6{
+padding-top:60px;
+font-family: Renner bold;
+font-size: 35px;
+}
+
+.lcard p{
+  font-family: Renner bold;
+  font-size: 20px;
+  padding-top: 30px;
+  margin-right: 180px;
+  color: #fff;
+}
+.lcard span{
+color: #fff;
+}
+
+.text span{
+color: rgb(255, 113, 0);;
+font-family: Renner bold;
+font-size: 25px;
+}
+.text{
+  padding: 20px 0 0 40px;
+}
+.text p
+{
+
+color: #fff;
+font-size: 15px;
+text-align: left;
+margin-top: 30px;
+}
+.history{
+  display: flex;
+  align-items: center;
+
+}
+
+.Donate{
+  padding: 120px 0;
+}
+
+.pp{
+  font-size: 13px;
+}
+.contentd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CABS{
+margin-top: 5rem;
+margin-left: 13rem;
+}
+.contentd h6{
+padding-bottom: 30px;
+  font-family: Renner bold;
+  font-size: 60px;
+
+}
+
+.contentd span{
+  color: rgb(255, 113, 0);;
+}
+.contentheip p{
+  font-family: Renner medium;
+}
+.contentheip span{
+  font-family: Renner bold;
+}
+.brands img{
+  width: 20%;
+  display: flex;
+  padding: 30px;
+  object-fit: contain;
+}
+.brand1{
+  display: flex;
+
+}
+
+.brand2{
+  display: flex;
+}
+
+.content7 h6{
+  color: #fff;
+  font-family: Renner bold;
+}
+.content7 p{
+color: #fff;
+font-family: Renner medium;
+}
+.content7{
+  margin-top: 5rem;
+  margin-left: 24rem;
+  font-size: 13px;
+}
+
+.nk{
+  color: #fff;
+  margin-left: 300px;
+  font-size: 35px;
+}
+
+.ink{
+  color: rgb(255, 113, 0);;
+  font-size: 25px;
+  margin-left: 200px;
+}
+
+
+
+
+
+.maill h6{
+  color: #fff;
+  font-family: Renner bold;
+}
+
+.content8 h6{
+  color: #fff;
+  font-family: Renner bold;
+}
+
+
+
+
+.maill p{
+  color: #fff;
+  font-family: Renner medium;
+  font-size: 14px;
+} 
+
+.content8 p{
+  color: #fff;
+  font-family: Renner medium;
+  font-size: 14px;
+}
+
+
+
+.navl p{
+  color: #fff;
+  padding-top: 60px;
+  font-family: Renner medium;
+  font-size: 15px;
+}
+
+.navll h6{
+  color: #fff;
+  font-family: Renner bold;
+}
+.navll a{
+  color: #fff;
+  font-family: Renner medium;
+  
+}
+
+.navll{
+  
+ margin-left: 8rem; 
+}
+
+.navll ul{
+  padding-top: 10%;
+}
+
+
+.uncommon{
+  color: #fff;
+  margin-top:50px;
+  font-size: 15px;
+  font-family: Renner medium;
+}
+
+.followus{
+  margin-top:50px;
+
+}
+
+.followus a{
+  color: #fff;
+  font-family: Renner medium;
+}
+
+
+.hrrr{
+background-color: #fff;
+  width: 90%;
+  margin-top:60px;
+margin-left: 20px;
+}
+
+
+.ftefecebook{
+  width: 2%;
+  background-color: #fff;
+}
+
+.fteinstagram{
+  width: 2%;
+background-color: #fff;
+}
+.fte{
+  padding-left: 75px;
+}
+
+.copy{
+  color: #fff;
+  font-family: Renner bold;
+  padding-left:600px;
+  font-size: 12px;
+}
+
+.icon2{
+margin-bottom: -22px;
+}
+
+
+
+.progress{
+  width: 50%;
+  height: 7%;
+  margin-left: 170px;
+}
+
+
+.hre{
+  background-color: rgb(255, 113, 0);;;
+  height: 2px;
+  width: 80px;
+  margin-left: 16rem;
+  margin-top: -33px;
+}
+
+.ree{
+  background-color: rgb(255, 113, 0);;;
+  height: 2px;
+  margin-top: -20px;
+}
+
+.icon2 a{
+  color: #fff;
+}
+
+.fa fa-facebook-official{
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+}
+
+
+
+  @media (min-width:767px) {
+  
+.aboutus{
+    display: block;
+    background-color: black;
+    padding-top:10%;
+      }
+
+    }
+    .footer{
+    background-color: black;
+    padding:100px 0 0 0 ; 
+      padding-bottom: 150px;
+   } 
+
+   .cott p{
+    color: #fff;
+    display: flex;
+
+   }
+   .qucklinks h6{
+    color: #fff;
+
+   }
+
+   
+
+.maill{
+  color: #fff;
+}
+
+.content8{
+  color: #fff;
+}
+
+
+
+
+
+.end{
+  font-size: 25px;
+}
+ @media (max-width:420px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .aboutus{
+    width: 100%;
+  }
+
+  .content p {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .mobi {
+   margin: 0;
+   width: 100%;
+}
+
+.content{
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+}
+    
+
+.donate-card {
+  background-color: rgb(255, 113, 0);
+  height: 6rem;
+   width: 100%; 
+  margin-top: 60px;
+}
+
+.donate-card a {
+  color: #fff;
+  font-family: Renner medium;
+}
+
+.donate-card a {
+  color: #fff;
+  font-family: Renner medium;
+   margin-left: 16rem;
+}
+
+.aims {
+  color: #fff;
+  font-family: Renner medium;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+   margin: 2px 0; 
+}
+
+.cont p {
+   margin-top: 20px; 
+}
+
+.fistr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image2 {
+  padding-left: 10px;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-top:25px ;
+}
+
+.kcard {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+  padding: 30px;
+  margin-top:25px ;
+}
+
+.image3 {
+  padding-left: 10px;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-top:25px ;
+}
+
+.nk {
+  color: #fff;
+  margin-left: 200px;
+  font-size: 35px;
+}
+
+
+.hre {
+  background-color: rgb(255, 113, 0);
+  height: 1px;
+  width: 50px;
+  margin-left: auto;
+  margin-top: -33px;
+}
+
+ .brands img {
+  width: 20%;
+  display: flex;
+  padding: 13px;
+  object-fit: contain;
+} 
+
+.navll {
+   margin-left: 0rem; 
+}
+
+.aims {
+  color: #fff;
+  font-family: Renner medium;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  margin: 40px 0;
+}
+.right img {
+  width: 80%;
+  object-fit: contain;
+  margin: 40px 0;
+}
+.cardd {
+  /* padding: 100px 0 0 0; */
+  background-color: black;
+}
+      }
+
+
+
+
+
+      @media (min-width:767px) {
+  
+        .aboutus{
+            display: block;
+            background-color: black;
+            padding-top:10%;
+              }
+        
+
+              
+            }
+
+
+      
+      @media only screen and (max-width: 935px) {
+
+
+        .nav-menu{
+          display: block;
+        }
+        
+
+
+
+        .aboutus{
+          display: block;
+          background-color: black;
+          padding-top:10%;
+            }
+      
+
+
+          
+          }
+
+      
